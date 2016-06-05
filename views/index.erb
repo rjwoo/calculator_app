@@ -1,0 +1,17 @@
+<h2>Welcome to my Calculator App</h2>
+<form action="/" method="POST">
+  <input type="text" name="val1" value="<%= @val1 %>">
+
+    <select name="operation" value="<%= value="" %>">Select operation
+      <option value="1" <% if @operation == "1" %>selected<% end %>>+</option>
+      <option value="2" <% if @operation == "2" %>selected<% end %>>-</option>
+      <option value="3" <% if @operation == "3" %>selected<% end %>>%</option>
+      <option value="4" <% if @operation == "4" %>selected<% end %>>/</option>
+      <option value="5" <% if @operation == "5" %>selected<% end %>>*</option>
+    </select>
+
+  <input type="text" name="val2" value="<%= @val2 %>">
+  <input type="submit" value="=">
+</form
+<br>
+<p>Result: <%= @total%></p>
